@@ -17,7 +17,7 @@ function Chat() {
 	const { groupId } = useParams();
 	const [groupName, setGroupName] = useState("");
 	const [messages, setMessages] = useState([]);
-	const [{user}, dispatch] = useStateValue();
+	const [{user},] = useStateValue();
 
 	useEffect(() => {
 		if (groupId) {
@@ -78,7 +78,7 @@ function Chat() {
 				
 			{messages.map((message) => (
 					<p key={message.id}
-						className={`chat__message ${
+					className={`chat__message ${
 							message.name === user.displayName && "chat__receiver"
 						}`}
 					>

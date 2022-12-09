@@ -13,3 +13,10 @@
   margin-top: -30px;
   box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.7);
 }
+
+img[alt="whatsapp img"] {
+  flex : 0.70;
+  object-fit: contain;
+  height: 300px;
+  margin-top: 13%;
+}

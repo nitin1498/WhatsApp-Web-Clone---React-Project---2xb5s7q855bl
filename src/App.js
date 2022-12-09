@@ -1,13 +1,13 @@
 import "./App.css";
 import Sidebar from "./Sidebar";
 import Chat from "./Chat";
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from "./Login";
 import { useStateValue } from "./StateProvider";
 
 function App() {
-	const [{ user }, dispatch] = useStateValue();
+	const [{ user }, ] = useStateValue();
 
 	return (
 		<div className="app">
@@ -22,7 +22,10 @@ function App() {
 								<Chat />
 							</Route>
 							<Route path="/">
-								<h1>Home Page</h1>
+							<img
+					src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/800px-WhatsApp.svg.png"
+					alt="whatsapp img"
+				/>
 							</Route>
 						</Switch>
 					</Router>
